@@ -1,0 +1,19 @@
+{
+  "name": "challenge19",
+  "version": "1.0.0",
+  "main": "challenge19.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romiagungn/web-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romiagungn/web-challenges/issues"
+  },
+  "homepage": "https://github.com/romiagungn/web-challenges#readme",
+  "description": ""
+}
