@@ -15,5 +15,8 @@
     "url": "https://github.com/romiagungn/web-challenges/issues"
   },
   "homepage": "https://github.com/romiagungn/web-challenges#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
