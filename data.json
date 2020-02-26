@@ -1,10 +1,23 @@
 [
     {
-        "id": "romie",
-        "string": "agung"
+        "string": "Romie",
+        "integer": 1,
+        "float": "4",
+        "date": "2020-02-02",
+        "boolean": "true"
     },
     {
-        "id": "awaw",
-        "string": "agubwawang"
+        "string": "Agung",
+        "integer": 2,
+        "float": "5",
+        "date": "2020-02-02",
+        "boolean": "true"
+    },
+    {
+        "string": "Nugraha",
+        "integer": 3,
+        "float": "6",
+        "date": "2020-02-02",
+        "boolean": "false"
     }
 ]

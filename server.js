@@ -17,8 +17,15 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 app.use("/", express.static(path.join(__dirname, "views")));
 
-app.get('/', function (req, res) {
-   res.render('index',{json:data})
+app.get('/', (req, res) => {
+   res.render("index",{json:data})
+})
+app.get('/add', (req, res) => {
+   res.render("add")
+})
+app.get('/edit/:id', (req, res) => {
+   const id = req.params.id;
+   res.render("edit",{item:{...data[id]}, id});
 })
 
 app.listen(3000, () => {
