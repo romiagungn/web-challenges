@@ -26,7 +26,11 @@ app.get('/add', (req, res) => {
 app.post('/add',(req, res) => {
    data.push ({
       id: req.body.id,
-      string: req.body.string
+      string: req.body.string,
+      integer: req.body.integer,
+      float: req.body.float,
+      date: req.body.date,
+      boolean: req.body.boolean
    })
    write(data);
    res.redirect('/');
@@ -38,6 +42,28 @@ app.get('/edit/:id', (req, res) => {
    res.render("edit",{item:{...data[id]}, id});
 })
 
+app.post('/edit/:id',(req, res) => {
+   const id = req.params.id;
+   let isi = {
+      id: req.body.id,
+      string: req.body.string,
+      integer: req.body.integer,
+      float: req.body.float,
+      date: req.body.date,
+      boolean: req.body.boolean
+   }
+   data.splice(id, 1);
+   data.push(isi);
+   write(data);
+   res.redirect('/');
+})
+
+app.get('/delete/:id', (req, res) => {
+   const id = req.params.id;
+   data.splice(id,1);
+   write(data);
+   res.redirect('/');
+})
 app.listen(3000, () => {
    console.log(`web ini berjalan di port 3000!`);
 });
