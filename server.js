@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const fs = require("fs");
 const data = JSON.parse(fs.readFileSync("data.json", "utf8"));
-const writeData = (data) => fs.writeFileSync("./data.json", JSON.stringify(data, null, 3));
+const write = (data) => fs.writeFileSync("data.json", JSON.stringify(data, null, 3));
 
 var bodyParser = require('body-parser')
 
@@ -23,6 +23,16 @@ app.get('/', (req, res) => {
 app.get('/add', (req, res) => {
    res.render("add")
 })
+app.post('/add',(req, res) => {
+   data.push ({
+      id: req.body.id,
+      string: req.body.string
+   })
+   write(data);
+   res.redirect('/');
+})
+
+
 app.get('/edit/:id', (req, res) => {
    const id = req.params.id;
    res.render("edit",{item:{...data[id]}, id});
