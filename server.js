@@ -39,7 +39,7 @@ app.post('/add',(req, res) => {
 
 app.get('/edit/:id', (req, res) => {
    const id = req.params.id;
-   res.render("edit",{item:{...data[id]}, id});
+   res.render("edit", {item:{...data[id]}, id});
 })
 
 app.post('/edit/:id',(req, res) => {
