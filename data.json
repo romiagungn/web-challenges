@@ -1,23 +1,30 @@
 [
-    {
-        "string": "Romie",
-        "integer": 1,
-        "float": "4",
-        "date": "2020-02-02",
-        "boolean": "true"
-    },
-    {
-        "string": "Agung",
-        "integer": 2,
-        "float": "5",
-        "date": "2020-02-02",
-        "boolean": "true"
-    },
-    {
-        "string": "Nugraha",
-        "integer": 3,
-        "float": "6",
-        "date": "2020-02-02",
-        "boolean": "false"
-    }
+   {
+      "string": "Romie",
+      "integer": "2",
+      "float": "5",
+      "date": "2020-02-02",
+      "boolean": "true"
+   },
+   {
+      "string": "Agung",
+      "integer": "2",
+      "float": "5",
+      "date": "2020-02-02",
+      "boolean": "true"
+   },
+   {
+      "string": "Nugraha",
+      "integer": "3",
+      "float": "6",
+      "date": "2020-02-02",
+      "boolean": "false"
+   },
+   {
+      "string": "Romie4",
+      "integer": "2",
+      "float": "3",
+      "date": "2020-02-29",
+      "boolean": "false"
+   }
 ]
