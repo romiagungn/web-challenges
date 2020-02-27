@@ -1,21 +1,7 @@
 [
    {
-      "string": "Romie",
-      "integer": "2",
-      "float": "5",
-      "date": "2020-02-02",
-      "boolean": "true"
-   },
-   {
-      "string": "Agung",
-      "integer": "2",
-      "float": "5",
-      "date": "2020-02-02",
-      "boolean": "true"
-   },
-   {
       "string": "Nugraha",
-      "integer": "3",
+      "integer": "1",
       "float": "6",
       "date": "2020-02-02",
       "boolean": "false"
@@ -26,5 +12,19 @@
       "float": "3",
       "date": "2020-02-29",
       "boolean": "false"
+   },
+   {
+      "string": "Romie",
+      "integer": "1",
+      "float": "5",
+      "date": "2020-02-02",
+      "boolean": "true"
+   },
+   {
+      "string": "Agung",
+      "integer": "4",
+      "float": "5",
+      "date": "2020-02-02",
+      "boolean": "true"
    }
 ]

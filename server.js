@@ -52,8 +52,7 @@ app.post('/edit/:id',(req, res) => {
       date: req.body.date,
       boolean: req.body.boolean
    }
-   data.splice(id, 1);
-   data.push(isi);
+   data.splice(id, 1, isi);
    write(data);
    res.redirect('/');
 })
